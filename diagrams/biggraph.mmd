@@ -1,0 +1,32 @@
+---
+config:
+  theme: base
+  themeVariables:
+    primaryColor: "#dae8fc"
+    primaryTextColor: "#1a1a1a"
+    primaryBorderColor: "#6c8ebf"
+    lineColor: "#666666"
+    secondaryColor: "#fff2cc"
+    tertiaryColor: "#d5e8d4"
+---
+graph LR
+    classDef event fill:#d5e8d4,stroke:#82b366,stroke-width:2px,color:#333
+    classDef process fill:#dae8fc,stroke:#6c8ebf,stroke-width:2px,color:#333
+    classDef decision fill:#fff2cc,stroke:#d6b656,stroke-width:2px,color:#333
+    classDef product fill:#e8d5f5,stroke:#7b4fa6,stroke-width:2px,color:#333
+    classDef default fill:#f5f5f5,stroke:#999,stroke-width:1px,color:#333
+    A[Christmas]
+    B(Go shopping)
+    C{Let me think}
+    D[Laptop]
+    E[iPhone]
+    F[fa:fa-car Car]
+    A -->|Get money| B
+    B --> C
+    C -->|One| D
+    C -->|Two| E
+    C -->|Three| F
+    class A event
+    class B process
+    class C decision
+    class D,E,F product
